@@ -3,11 +3,11 @@ from typing import Any
 class Node:
     def __init__(self, value, next=None):  # Funkcja, ktora inicjalizuje obiekt Node
         self.value = value  # Przypisuje wartosc
-        self.next = next  # Inicjalizuje next jako NULL
+        self.next = next  # Inicjalizuje next jako None
 
 
 class LinkedList:
-    def __init__(self, node=None):  # Funkcja inicjalizujaca glowe
+    def __init__(self, node=None):  # Funkcja inicjalizujaca glowe i ogon
         self.head = node
         self.tail = node
 
