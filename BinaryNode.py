@@ -3,11 +3,7 @@ from typing import Any, Callable, List
 import binarytree as BinaryTree
 
 def horizontal_sum(tree: BinaryTree) -> List[Any]:
-    przypisane: List[('BinaryNode', int)] = []
     wynik: List[Any] = []
-
-    def przypisanie_poziomow(node: 'BinaryNode', level: int = 0) -> None:
-        przypisane.append((node, level))
 
     def przypisanie_poziomow(node: 'TreeNode', level: int = 0) -> None:
         if len(wynik) <= level:
